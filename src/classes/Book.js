@@ -21,7 +21,6 @@ export class Book {
   }
 
   setScore(score) {
-    // Betyget får bara vara mellan 1-5.
     if (score >= 1 && score <= 5) {
       this.#score = score;
       return true;

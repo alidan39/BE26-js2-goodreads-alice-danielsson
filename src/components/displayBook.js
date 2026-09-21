@@ -13,6 +13,7 @@ function setupDeleteButton(deleteButton, book, bookElement) {
 
 function setupScoreButton(scoreButton, book, scoreInput, scoreDisplay) {
   scoreButton.addEventListener("click", function () {
+    // Betyg kan bara sparas om boken är läst.
     if (book.getIsRead()) {
       const score = Number(scoreInput.value);
       const scoreSaved = book.setScore(score);
@@ -43,6 +44,7 @@ function setupReadButton(readButton, book, readStatus, scoreDisplay) {
   });
 }
 
+// Hämtar HTML-mallen och skapar en kopia för den nya boken.
 function createBookElement() {
   const template = document.querySelector("#book-template");
   const bookElement = template.content.firstElementChild.cloneNode(true);
