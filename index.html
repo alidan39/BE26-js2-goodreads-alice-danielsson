@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>be26-js2-goodreads-alice-danielsson</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Goodreads</h1>
+
+      <form>
+        <label for="title">Titel:</label>
+        <input type="text" id="title" required />
+
+        <label for="author">Författare:</label>
+        <input type="text" id="author" required />
+
+        <button type="submit">Lägg till bok</button>
+      </form>
+      <div id="books"></div>
+      <template id="book-template">
+        <article>
+          <h2 class="book-title"></h2>
+          <p class="book-author"></p>
+          <p class="read-status"></p>
+          <p class="book-score"></p>
+
+          <div class="book-actions">
+            <button type="button" class="read-button"></button>
+
+            <label>
+              <span>Betyg:</span>
+              <input type="number" class="score-input" min="1" max="5" />
+            </label>
+
+            <button type="button" class="score-button"></button>
+            <button type="button" class="delete-button"></button>
+          </div>
+        </article>
+      </template>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f4ef;
+  color: #292421;
+  line-height: 1.5;
+}
+
+#app {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #d8d0c8;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6b4f3a;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#books {
+  display: grid;
+  gap: 20px;
+}
+
+#books article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.book-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+#books h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+#books article p {
+  margin: 8px 0;
+}
+
+.read-status {
+  font-weight: bold;
+}
+
+#books article button {
+  padding: 10px 14px;
+  margin-top: 10px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6b4f3a;
+  color: white;
+  cursor: pointer;
+}
+
+#books article button:hover {
+  opacity: 0.85;
+}
+
+.book-score {
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+#books article input {
+  width: 70px;
+  padding: 8px;
+  margin-left: 5px;
+  border: 1px solid #d8d0c8;
+  border-radius: 6px;
+}
+
+.delete-button {
+  background-color: #8b3a3a !important;
+}
+
+.delete-button:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 480px) {
+  #app {
+    width: 85%;
+  }
+
+  #books {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  #app {
+    width: 80%;
+  }
+
+  #books {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
