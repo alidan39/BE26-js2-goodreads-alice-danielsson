@@ -6,9 +6,15 @@ I applikationen kan användaren lägga till böcker med titel och författare. B
 
 ## Kodstruktur
 
-- `classes/Book.js` innehåller `Book`-klassen som hanterar information och funktioner för varje bok.
-- `components/displayBook.js` skapar och visar bokkorten på sidan samt hanterar knapparnas funktioner.
-- `services/firebase.js` innehåller funktionerna för att hämta, lägga till, uppdatera och ta bort böcker i Firebase.
-- `main.js` startar applikationen och hanterar formuläret samt laddar in böcker från databasen.
-- `style.css` innehåller sidans design och reponsiva layout.
+- `src/classes/Book.js` innehåller `Book`-klassen som hanterar information och funktioner för varje bok.
+- `src/components/displayBook.js` skapar och visar bokkorten på sidan samt hanterar knapparnas funktioner.
+- `src/services/firebase.js` innehåller funktionerna för att hämta, lägga till, uppdatera och ta bort böcker i Firebase.
+- `src/main.js` startar applikationen och hanterar formuläret samt laddar in böcker från databasen.
+- `src/style.css` innehåller sidans design och responsiva layout.
 - `index.html` innehåller sidans HTML-struktur och HTML-mallen för ett bokkort.
+
+## Resurser
+
+- Github: [BE26-js2-goodreads-alice-danielsson](https://github.com/alidan39/BE26-js2-goodreads-alice-danielsson)
+- Netlify: [Goodreads](https://goodreads-alice-danielsson.netlify.app/)
+- Firebase: [Firebase](https://firebase.google.com/)
