@@ -15,6 +15,6 @@ I applikationen kan användaren lägga till böcker med titel och författare. B
 
 ## Resurser
 
-- Github: [BE26-js2-goodreads-alice-danielsson](https://github.com/alidan39/BE26-js2-goodreads-alice-danielsson)
-- Netlify: [Goodreads](https://goodreads-alice-danielsson.netlify.app/)
-- Firebase: [Firebase](https://firebase.google.com/)
+- Firebase Realtime Database: [Firebase Realtime Database](https://firebase.google.com/docs/database)
+- REST API-dokumentation: [Firebase Realtime Database REST API](https://firebase.google.com/docs/reference/rest/database)
+- HTML Template: [MDN Web Docs - `<template>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template)
